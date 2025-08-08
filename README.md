@@ -76,8 +76,8 @@ Search Screen → Chart Screen (on ticker select)
 ## Wireframes
 
 [Add picture of your hand sketched wireframes in this section]
-<img src="(https://github.com/user-attachments/assets/53770f4a-c887-488e-961f-959c16b6e5c6)
-" width=600>
+![IMG_4544](https://github.com/user-attachments/assets/57ddb517-3c18-41d0-8178-9620c6a6042b)
+
 
 ### [BONUS] Digital Wireframes & Mockups
 
