@@ -11,7 +11,7 @@
 
 ### Description
 
-[Description of your app]
+A mobile stock screener app that allows users to view live or recent market data for specific tickers. Users can search for stocks, view line or candlestick charts, and filter results by customizable time frames (1D, 1W, 1M, 3M, 1Y, 5Y, MAX). The app will also allow quick access to basic stock information such as price, volume, percentage change, and moving averages.
 
 ### App Evaluation
 
