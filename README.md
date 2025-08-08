@@ -16,52 +16,62 @@ A mobile stock screener app that allows users to view live or recent market data
 ### App Evaluation
 
 [Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+- **Category:** Finance / Productivity
+- **Mobile:** Optimized for mobile with smooth, touch-enabled chart navigation, pull-to-refresh for latest data, and swipe gestures to switch between time frames or tickers.
+- **Story:** Empowers investors and traders to make quick, informed decisions by providing visual and customizable stock performance data on the go.
+- **Market:** Retail investors, finance enthusiasts, and anyone tracking the stock market. Large market due to growing interest in personal investing and trading.
+- **Habit:** Users may open the app multiple times per day to check live prices, compare stock performance, and track trends.
+- **Scope:** MVP includes ticker search, chart display, and time frame switching. Extended features can add watchlists, indicators (RSI, MACD), and push notifications for price alerts.
 
 ## Product Spec
 
 ### 1. User Stories (Required and Optional)
 
-**Required Must-have Stories**
+**Required Must-have Stories**  
+ User can search for a stock by ticker symbol.
 
-* [fill in your required user stories here]
-* ...
+ User can view a line or candlestick chart for a selected ticker.
+
+ User can switch between time frames (1D, 1W, 1M, 3M, 1Y, 5Y, MAX).
+
+ User can see basic stock stats: current price, % change, volume.
+
+ Smooth, responsive chart zoom and pan gestures.
+
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+ Add technical indicators (RSI, MACD, SMA).
+
+ Allow creation of a personal watchlist.
+
+ Push notifications for price targets or alerts.
+
+ Dark/light mode toggle.
 
 ### 2. Screen Archetypes
 
-- [ ] [list first screen here]
-* [list associated required story here]
-* ...
-list second screen here]
-* [list associated required story here]
-* ...
+- [ ] [Search Screen]
+* User can input a stock ticker symbol.
+* Displays list of matching stocks and quick stats.
+[Chart Screen]
+Displays line or candlestick chart for selected ticker.
+
+Time frame selector at the top.
+
+Quick stats panel showing price, change %, volume.
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Search
+* Chart
 
 **Flow Navigation** (Screen to Screen)
 
-- [ ] [list first screen here]
-* [list screen navigation here]
-* ...
-- [ ] [list second screen here]
-* [list screen navigation here]
-* ...
+Search Screen → Chart Screen (on ticker select)
+
 
 ## Wireframes
 
