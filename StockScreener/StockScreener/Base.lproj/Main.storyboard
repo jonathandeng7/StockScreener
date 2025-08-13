@@ -8,43 +8,51 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Chart-->
+        <!--ChartViewController-->
         <scene sceneID="9nE-hz-k1l">
             <objects>
-                <viewController id="17C-fq-3hV" sceneMemberID="viewController">
+                <viewController title="ChartViewController" id="17C-fq-3hV" customClass="ChartViewController" customModule="StockScreener" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ATA-lq-mwN">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tg8-4C-6OE">
-                                <rect key="frame" x="175" y="135" width="42" height="21"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FS7-A8-TxC">
+                                <rect key="frame" x="76" y="635" width="231" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="1D"/>
+                                    <segment title="1W"/>
+                                    <segment title="1M"/>
+                                    <segment title="3M"/>
+                                    <segment title="1Y"/>
+                                </segments>
+                            </segmentedControl>
+                            <view contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qLF-TF-sp3">
+                                <rect key="frame" x="47" y="213" width="299" height="303"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tg8-4C-6OE">
+                                <rect key="frame" x="128" y="103" width="126" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FS7-A8-TxC">
-                                <rect key="frame" x="131" y="635" width="131" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                </segments>
-                            </segmentedControl>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qLF-TF-sp3">
-                                <rect key="frame" x="76" y="296" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tIX-Km-K8d"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Chart" image="chart.xyaxis.line" catalog="system" badgeValue="Chart" selectedImage="chart.xyaxis.line" id="bvV-0t-vm5"/>
+                    <connections>
+                        <outlet property="containerView" destination="qLF-TF-sp3" id="ddn-TB-weD"/>
+                        <outlet property="tickerLabel" destination="Tg8-4C-6OE" id="ZSW-Is-u0P"/>
+                        <outlet property="timeframeControl" destination="FS7-A8-TxC" id="dQs-T0-NGJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dLq-pQ-9zg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117" y="844"/>
+            <point key="canvasLocation" x="116.79389312977099" y="843.66197183098598"/>
         </scene>
         <!--SearchViewController-->
         <scene sceneID="gba-ze-I45">
@@ -63,7 +71,7 @@
                                 </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aT0-Zi-nwJ">
-                                <rect key="frame" x="76" y="362" width="240" height="128"/>
+                                <rect key="frame" x="0.0" y="135" width="393" height="553"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
@@ -72,10 +80,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" badgeValue="Search" selectedImage="magnifyingglass" id="yBu-Pk-Y5p"/>
+                    <connections>
+                        <outlet property="searchBar" destination="DqG-3M-OyT" id="Ex3-UL-VEV"/>
+                        <outlet property="tableView" destination="aT0-Zi-nwJ" id="6Lm-K6-6cW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yo0-ck-JDx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1140" y="4"/>
+            <point key="canvasLocation" x="1139.6946564885495" y="3.5211267605633805"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2Uu-p9-NdC">
@@ -83,6 +95,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="PHy-WS-EYu" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I8f-UF-VuV">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
