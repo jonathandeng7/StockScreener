@@ -9,6 +9,12 @@
 
 ## Overview
 
+<div>
+    <a href="https://www.loom.com/share/e2f514b4fb00404da098480390696204">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/e2f514b4fb00404da098480390696204-33dc9c726dac4c60-full-play.gif">
+    </a>
+  </div>
+
 ### Description
 
 A mobile stock screener app that allows users to view live or recent market data for specific tickers. Users can search for stocks, view line or candlestick charts, and filter results by customizable time frames (1D, 1W, 1M, 3M, 1Y, 5Y, MAX). The app will also allow quick access to basic stock information such as price, volume, percentage change, and moving averages.
